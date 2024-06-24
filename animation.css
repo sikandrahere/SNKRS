@@ -1,0 +1,52 @@
+
+@keyframes colorchange {
+    0% {
+
+        color: red;
+    }
+
+    10% {
+
+        color: white;
+
+    }
+
+    30% {
+
+        color: red;
+    }
+
+    50% {
+
+        color: white;
+    }
+
+    70% {
+
+        color: red;
+    }
+
+    90% {
+
+        color: white;
+    }
+
+    100% {
+
+        color: red;
+    }
+
+}
+
+
+@keyframes pop-word {
+    to {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
