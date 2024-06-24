@@ -63,6 +63,20 @@ genderSelect.addEventListener("change", () => {
 });
 
 
+// 
+
+function male(){
+    window.location.href="men_section.html"
+}
+function female(){
+    window.location.href="women_section.html"
+}
+
+function kids(){
+    window.location.href="kids_section.html"
+}
+
+
 // sort
 
 const productSelect = document.getElementsByClassName("sort")[0]; // Select the first element with the class "sort"
@@ -131,6 +145,10 @@ function home() {
 
 function category() {
     window.location.href = 'category.html';
+}
+
+function trending(){
+    window.location.href='trending.html';
 }
 
 

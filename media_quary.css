@@ -13,10 +13,19 @@
     }
 
 }
+@media only screen and (max-width:385px) {
+    .mid-text-box {
+        font-size: 35px;
+    }
+
+}
 
 @media only screen and (max-width:950px) {
     .menu-bar .left-menu {
         display: none;
+    }
+    .select-gender{
+        display:flex;
     }
 
     .low-bar {
@@ -102,8 +111,30 @@
         border-top: 1px solid rgba(0, 0, 0, 0.323);
     }
     .top-bar select {
-        width: 100px;
+        width: 70px;
         padding: 5px 10px;
     
     }
 }
+
+
+
+@media screen and (max-width:350px) {
+    .profile h1{
+        font-size: 28px;
+    }
+    
+ }
+ @media screen and (max-width:318px) {
+    .profile h1{
+        font-size: 18px;
+    }
+    
+ }
+
+ @media screen and (max-width:436px) {
+    .profile-img-contact{
+        flex-direction: column;
+    }
+    
+ }

@@ -228,6 +228,19 @@ nav {
 
 /* page-1 */
 
+.select-gender{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.select-gender-div img{
+    width: 40px;
+
+}
+
 .page-1 {
     height: 100%;
 
