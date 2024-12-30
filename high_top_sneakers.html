@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="media_quary.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>High Top Sneakers</title>
+</head>
+<body>
+    <div class="casual_sneakers_section">
+        <div class="menu-bar">
+            <nav>
+                <ul class="left-menu">
+                    <li><a href="men_section.html">Men</a></li>
+                    <li><a href="women_section.html">Women</a></li>
+                    <li><a href="kids-section.html">Kids</a></li>
+                    <li><a href="#" class="category">Category</a>
+                        <ul class="dropdown-list">
+                            <li><a href="casual_sneakers.html">Casual sneakers</a></li>
+                            <li><a href="desinger_shoes.html">Designer sneakers</a></li>
+                            <li><a href="athletic_sneakers.html">Athletic sneakers</a></li>
+                            <li><a href="canvas_sneakers.html">Canvas sneakers</a></li>
+                            <li><a href="high_top_sneakers.html">High top sneakers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="index.html" class="logo">S N K R S</a>
+                <ul class="right-menu">
+                    <li><input type="text" class="search" onkeyup="search()"><i id="search" class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href="fav.html"><i class="fa-solid fa-heart" style="color: #c81e1e;"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+                <div class="profile-box" onclick="profile()">
+                    <i class="fa-solid fa-user" style="color:black;" id="profile-icon"></i>
+                    <p class="profile-hover">profile</p>
+                </div>
+
+            </nav>
+        </div>
+        <div class="top-bar">
+            <div>
+                <select class="gender">
+                    <option value="all">All</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="kids">Kids</option>
+
+                </select>
+                <select class="sort">
+                    <option value="all">Sort</option>
+                    <option value="new">What's new</option>
+                    <option value="discount">discount</option>
+                </select>
+                <select class="filter">
+                    <option value="all">filter</option>
+                    <option value="brands">Top brands</option>
+                    <option value="rated">Top rated</option>
+                    <option value="selected">Our selected</option>
+                    <option value="star">Rising star</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!--  -->
+
+        <div class="img-box" >
+            <div class="first-img-box box" data-gender="male">
+                <img src="./img/nike3.jpg">
+                <p class="p-name">Nike Air Force 1 '07</p>
+                <p>Skate Shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="second-img-box box" data-gender="female">
+                <img src="./img/shoes2.jpg">
+                <p class="p-name"> XXXVIII Low PF</p>
+                <p>Men's shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="third-img-box box" data-gender="kids">
+                <img src="./img/shoes3.jpg">
+                <p class="p-name">shoe 4 RM</p>
+                <p>Casual shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="first-img-box box">
+                <img src="./img/canvas_shoes.jpg">
+                <p class="p-name">Nike Air Force 1 '07</p>
+                <p>Skate Shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="second-img-box box">
+                <img src="./img/casual_shoes.jpg">
+                <p class="p-name"> XXXVIII Low PF</p>
+                <p>Men's shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="third-img-box box" data-sort="new" data-filter="star">
+                <img src="./img/kids-4.jpg">
+                <p class="p-name">shoe 4 RM</p>
+                <p>Casual shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="first-img-box box" data-sort="discount" data-filter="selected">
+                <img src="./img/kids-5.jpg">
+                <p class="p-name">Nike Air Force 1 '07</p>
+                <p>Skate Shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="second-img-box box" data-filter="rated">
+                <img src="./img/kids-1.jpg">
+                <p class="p-name"> XXXVIII Low PF</p>
+                <p>Men's shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="third-img-box box" data-filter="brands">
+                <img src="./img/high_top.jpg">
+                <p class="p-name">shoe 4 RM</p>
+                <p>Casual shoes</p>
+                <p><a href="#">Shop now</a></p>
+            </div>
+        </div>
+
+
+         <!-- footer  -->
+
+         <div class="footer">
+            <ul class="last-box">
+                <li><a href="#" class="heading">Product</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="casual_sneakers.html">Casual sneakers</a></li>
+                        <li><a href="desinger_shoes.html">Designer sneakers</a></li>
+                        <li><a href="athletic_sneakers.html">Athletic sneakers</a></li>
+                        <li><a href="canvas_sneakers.html">Canvas sneakers</a></li>
+                        <li><a href="high_top_sneakers.html">High top sneakers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="heading">Support</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Payment realeted</a></li>
+                        <li><a href="#">Order realeted</a></li>
+                        <li><a href="#">Customer support</a></li>
+                        <li><a href="#">Message us</a></li>
+                        <li><a href="#">Write us</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="heading">Info</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Product info</a></li>
+                        <li><a href="#">Customer review</a></li>
+                        <li><a href="#">Our seller</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="heading">Contact Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa-solid fa-envelope fa-bounce"></i> snkrs@shoe.com</a></li>
+                        <li><a href="#"> <i class="fa-solid fa-phone fa-bounce"></i> 9166899875</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-links">
+                <h4>KEEP IN TOUCH</h4>
+                <div class="social-icon">
+                    <div onclick="facebook()">
+                        <i class="fa-brands fa-facebook fa-bounce" style="color: #140c3b;"></i>
+                    </div>
+
+                    <div onclick="insta()">
+                        <i class="fa-brands fa-instagram fa-bounce" style="color: #921111;"></i>
+                    </div>
+                    <div onclick="yt()">
+                        <i class="fa-brands fa-youtube fa-bounce" style="color: #e51515;"></i>
+
+                    </div>
+
+                    <div onclick="twitter()">
+                        <i class="fa-brands fa-x-twitter fa-bounce"></i>
+
+                    </div>
+
+
+                </div>
+                <div class="license">
+                    <p>&copy; 2024 Snkrs. All rights reserved.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
