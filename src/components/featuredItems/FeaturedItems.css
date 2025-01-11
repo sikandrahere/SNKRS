@@ -1,0 +1,18 @@
+.featured-product{
+    height: 100%;
+}
+.featured-items{
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-gap: 30px;
+    margin: 10px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+.heading{
+    font-family: "Rubik Vinyl", serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px;
+}

@@ -1,0 +1,49 @@
+.login-signup-form{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.logo{
+    font-size:40px;
+    font-weight: 600;
+}
+.login-sign-up p{
+    font-size: 20px;
+}
+.login-sign-up input{
+    width: 400px;
+    height: 60px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+}
+.term-conditions{
+    font-size: 20px;
+    margin: 10px;
+}
+.submit {
+    text-align: right;
+}
+.submit button{
+    width: 200px;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.779);
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    
+
+    .login-sign-up input{
+        width: 200px;
+        
+    }
+}

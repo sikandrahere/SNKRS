@@ -1,0 +1,19 @@
+.sub-items{
+    position: absolute;
+    width:100%;
+    background-color: white;
+    z-index: 100;
+    overflow-x: scroll;
+}
+.sub-items::-webkit-scrollbar{
+    display: none;
+}
+
+.sub-items-list{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+

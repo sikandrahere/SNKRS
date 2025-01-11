@@ -1,0 +1,146 @@
+.cart-items-section {
+  display: flex;
+  height: 100%;
+  margin: 20px;
+}
+.cart-items {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-show{
+    border: 2px solid rgba(0, 0, 0, 0.186);
+    border-radius: 10px;
+    margin: 5px;
+}
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;  
+}
+img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 4px;
+}
+.item-info p:first-child{
+    font-size: large;
+    font-weight: 600;  
+}
+.item-info p:nth-child(2){
+    color: rgba(0, 0, 0, 0.49);
+    font-size: large;
+    font-weight: 500;  
+}
+.item-info p:nth-child(3){
+    color: rgba(0, 0, 0, 0.49);
+    font-size: large;
+    font-weight: 600;
+}
+.item-price p{
+    color: rgba(0, 0, 0, 0.905);
+    font-size: large;
+    font-weight: 600;
+}
+.item-quantity-delete{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.item-quantity{
+    font-size: large;
+    font-weight: 600;
+}
+.item-delete{
+    font-size: large;
+    font-weight: 600;
+    color: rgb(226, 210, 210);
+    cursor: pointer;
+}
+.item-delete button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.total{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+.total-price{
+    display: flex;
+    gap: 5px;
+}
+.total-items{
+    display: flex;
+    gap: 5px;
+}
+.total p{
+    font-size: large;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.49);
+}
+.total p:nth-child(2){
+    font-size: large;
+    font-weight: 600;
+    color:black;
+}
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+.checkout button{
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 870px) {
+    
+    .cart-items-section {
+        flex-direction: column;
+      }
+
+
+}
+@media screen and (max-width: 710px) {
+    
+    .cart-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+      }
+
+
+}
+@media screen and (max-width: 560px) {
+    
+    .item-container {
+        display: flex;
+        flex-direction: column;  
+      }
+
+
+}

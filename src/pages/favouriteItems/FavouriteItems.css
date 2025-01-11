@@ -1,0 +1,11 @@
+.favourite-items{
+   height: 100%;
+}
+.favourite-items-list{
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-gap: 30px;
+    margin: 10px;
+    padding: 10px;
+    overflow-x: scroll;
+}

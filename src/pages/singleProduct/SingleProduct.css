@@ -1,0 +1,15 @@
+.single-product{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.product-details{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.product-details li{
+    list-style:inside;
+}

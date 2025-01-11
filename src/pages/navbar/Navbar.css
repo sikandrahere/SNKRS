@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+}
+.left-menu-section{
+    width: 40%;
+}
+.menu-bar .left-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-weight: 540;
+    
+}
+.menu-icon{
+    display: none;
+}
+
+.left-menu li.has-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+.menu-bar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #030202;
+    margin-left: 2px;
+
+}
+.left-menu li:hover{
+    border-bottom: 2px solid #030202;
+}
+.dropdown-menu {
+    width: 50%;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 4px;
+  }
+
+.subItems-list {
+    cursor: pointer;
+    padding-left: 10px;
+
+}
+
+.menu-bar .right-menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 540;
+}
+.search-box{
+    display: flex;
+}
+
+.menu-bar ul li input {
+    background: rgba(146, 136, 136, 0.389);
+    padding: 5px 5px;
+    border-radius: 30px;
+    color:black;
+    position: relative;
+    border: none;
+    
+
+
+}
+ .search-icon {
+    position: absolute;
+    margin-top: 8px;
+    margin-left:230px;
+    cursor: pointer;
+}
+.cart-icon{
+    position: relative;
+}
+.cart-icon p{
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    right: -4px;
+    
+}
+.profile{
+    margin-right: 10px;
+}
+
+/* media queries */
+@media screen and (max-width: 1100px) {
+    .menu-bar .right-menu{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .menu-bar ul li input{
+        width: 100px;
+    }
+    .menu-bar .right-menu{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+    }
+    .menu-bar .left-menu {
+        width: 20%;
+        flex-direction: column;
+        position:absolute;
+        top: 10%;
+        left: -400px;
+        transition: all 0.8s ease-in-out;
+        background-color: white;
+        box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+        border-radius:10px ;
+        font-size:15px ;
+        z-index: 100;
+        
+        
+    }
+    .left-menu li{
+        padding: 15px;
+        z-index: 100;
+    }
+    .dropdown-menu {
+        width: 100%;
+        left: 0;
+        padding: 0px;
+        margin-top: 0px;
+      }
+      .dropdown-menu li{
+        padding: 5px;
+        font-size: 15px;
+
+      }
+    .left-menu-section{
+        width: 10%;
+    }
+    .menu-bar .right-menu{
+        width: 40%;
+    }
+    .menu-icon:hover ~ .left-menu,.left-menu:hover{
+        left: 0;
+    }
+
+
+
+
+}
+@media screen and (max-width: 500px) {
+    .profile{
+        margin-right: 0px;
+    }
+    .menu-bar .logo {
+        font-size: 20px;
+       
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu-bar .right-menu{
+        width: 50%;
+    }
+
+    
+
+
+}

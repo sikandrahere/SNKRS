@@ -1,0 +1,16 @@
+.headline-section{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explore-image{
+    height: 50vh;
+}
+.explore-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
